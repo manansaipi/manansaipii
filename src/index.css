@@ -44,7 +44,7 @@ body{
 
 /* GENERAL STYLES */
 
-.cointainer{
+.container{
     width: var(--container-width-lg);
     margin: 0 auto;
 
