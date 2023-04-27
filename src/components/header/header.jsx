@@ -6,11 +6,12 @@ import HeaderSocial from './HeaderSocial'
 
 const header = () => {
   return (
+    <section id='header'>
     <header>
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Abdul Mannan Saipi</h1>
-        <h5 className="text-light">coders</h5>
+        <h5 className="text-light">This website is built using React.</h5>
         <CTA></CTA>
         <HeaderSocial></HeaderSocial>
         <div className="me">
@@ -22,6 +23,8 @@ const header = () => {
 
       </div>
     </header>
+    </section>
+    
   )
 }
 
