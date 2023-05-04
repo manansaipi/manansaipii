@@ -1,15 +1,15 @@
 steps:
   # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/qwiklabs-gcp-04-b4e9c6c662aa/myporto', '.']
+    args: ['build', '-t', 'gcr.io/arboreal-cat-381508/myporto', '.']
 
   # Push the Docker image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/qwiklabs-gcp-04-b4e9c6c662aa/myporto']
+    args: ['push', 'gcr.io/arboreal-cat-381508/myporto']
 
   # Deploy the Docker image to App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - 'app'
       - 'deploy'
-      - '--image-url=gcr.io/qwiklabs-gcp-04-b4e9c6c662aa/myporto'
+      - '--image-url=gcr.io/arboreal-cat-381508/myporto'

@@ -14,7 +14,7 @@ const header = () => {
         <CTA></CTA>
         <HeaderSocial></HeaderSocial>
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src="https://storage.googleapis.com/my_photo_react/foto.png" alt="me" />
         </div>
 
         <a href="#contact" className='scroll_down'>Scroll Down</a>
