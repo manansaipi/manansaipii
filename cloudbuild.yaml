@@ -13,3 +13,5 @@ steps:
       - 'app'
       - 'deploy'
       - '--image-url=gcr.io/arboreal-cat-381508/myportofolio'
+      - '--platform=managed'
+      - '--runtime=custom'
