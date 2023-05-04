@@ -15,9 +15,5 @@ steps:
 
   # Deploy the Docker image to App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
-   args: [
-      'app', 'deploy',
-      '--image-url=gcr.io/arboreal-cat-381508/myportofolio',
-      '--platform=managed',
-      '--region=asia-southeast1',
-    ]
+    args:
+      ['app', 'deploy', '--image-url=gcr.io/arboreal-cat-381508/myportofolio']
