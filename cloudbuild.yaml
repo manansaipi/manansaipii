@@ -1,0 +1,15 @@
+steps:
+  # Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/qwiklabs-gcp-04-b4e9c6c662aa/myporto', '.']
+
+  # Push the Docker image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/qwiklabs-gcp-04-b4e9c6c662aa/myporto']
+
+  # Deploy the Docker image to App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'app'
+      - 'deploy'
+      - '--image-url=gcr.io/qwiklabs-gcp-04-b4e9c6c662aa/myporto'
