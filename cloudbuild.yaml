@@ -1,4 +1,10 @@
 steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud components install app-engine-python
   # Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/arboreal-cat-381508/myportofolio', '.']
@@ -9,9 +15,9 @@ steps:
 
   # Deploy the Docker image to App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-      - 'app'
-      - 'deploy'
-      - '--image-url=gcr.io/arboreal-cat-381508/myportofolio'
-      - '--platform=managed'
-      - '--runtime=custom'
+   args: [
+      'app', 'deploy',
+      '--image-url=gcr.io/arboreal-cat-381508/myportofolio',
+      '--platform=managed',
+      '--region=asia-southeast1',
+    ]
