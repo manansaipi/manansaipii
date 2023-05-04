@@ -1,10 +1,11 @@
-runtime: nodejs14
-env_variables:
-  NODE_ENV: production
+runtime: nodejs
+env: flex
+
 handlers:
   - url: /
     static_files: build/index.html
     upload: build/index.html
+
   - url: /(.*)
     static_files: build/\1
     upload: build/(.*)
