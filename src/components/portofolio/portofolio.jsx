@@ -46,7 +46,7 @@ const portofolio = () => {
             <a href="https://github.com/manansaipi/finalssip" className='btn' target="_blank" rel="noreferrer">Github</a>
             <a href="https://drive.google.com/file/d/10F2BOJLSttfLvppUDpBly4JWbE_nY4pA/view" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
           </div>
-             <div style={{ margin: '20px' }}>Content</div>
+            
         </article>
       </div>
 
