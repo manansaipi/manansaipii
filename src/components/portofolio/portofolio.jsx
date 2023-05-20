@@ -24,11 +24,11 @@ const portofolio = () => {
         </article>
         <article className='portofolio__item'>
           <div className="portofolio__item-image">
-          <a href="https://github.com/manansaipi/finalssip#ticketing-web-application" target="_blank" rel="noreferrer"> <img src="https://img.youtube.com/vi/hubttbMuBt0/0.jpg" alt="" /></a>
+          <a href="https://github.com/manansaipi/final_wpm#to-do-list-mobile-application" target="_blank" rel="noreferrer"> <img src="https://img.youtube.com/vi/hubttbMuBt0/0.jpg" alt="" /></a>
            
           </div>
            <h3>
-          <a href="https://github.com/manansaipi/finalssip#ticketing-web-application"  style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noreferrer" >To-do list Mobile Application</a></h3>
+          <a href="https://github.com/manansaipi/final_wpm#to-do-list-mobile-application"  style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noreferrer" >To-do list Mobile Application</a></h3>
           <div className="portofolio__item-cta">
             <a href="https://github.com/manansaipi/final_wpm" className='btn' target="_blank" rel="noreferrer">Github</a>
             <a href="https://drive.google.com/file/d/1s6V5Nzl7FXEbAWJ9MVQ39xdk62G8iuud/view" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
