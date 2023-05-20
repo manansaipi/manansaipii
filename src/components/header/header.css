@@ -6,87 +6,94 @@ body {
 
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 10rem;
     overflow: hidden;
 }
 
 .header__container {
-    text-align: center;
+    text-align: none;
     height: 100%;
     position: relative;
 }
 
-/* CTA */
+/*jumbotron*/
+.jumbotron .text{
+	padding-bottom: 6rem;
+}
+.jumbotron{
+	background-size: cover;
+	height: 100vh;
+	margin-top: -100px;	
+	background-position: center;
+}
+.jumbotron .text h2{
+	text-transform: uppercase;
+	font-family: var(--lato);
+	font-size: 24px;
+	font-weight: 300;
+	padding-top: 9.5rem;
+}
+.jumbotron .text h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 75px;
+	color: black;
+	overflow: hidden;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
 
-.cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+  49% {
+    background-color: #ccc;
+  }
 
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+  	background-color: transparent;
+  }
+  100% {
+  	background-color: #ccc;
+  }
+}
+.jumbotron .text h1 .cursor{
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+.jumbotron .text h1 .cursor .typing {
+	animation: none;
+}
+.jumbotron .text span{	
+	color: var(--purple);
 }
 
-/* HEADER SOCIAL */
-
-.header__social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+.jumbotron .text h3{
+	text-transform: capitalize;
+	font-family: var(--poppins);
+	font-size: 24px;
+	font-weight: 400;
+	display: flex;
+	padding-bottom: 25px;
 }
-
-.header__social::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+.jumbotron .text h3::after{
+	content: '';
+	display: block;
+	border-right: 7px solid var(--lightpurple);
+	width: 5px;
 }
-
-/* PHOTO PROFILE */
-.me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-
-
-}
-
-/* SCROLL DOWN */
-
-.scroll_down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
-}
-
-#play-pause-btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 12px 32px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#play-pause-btn:hover {
-    background-color: white;
-    color: black;
+.jumbotron .sosial-media a{
+	text-decoration: none;
+	color: var(--lightgray);
+	padding-right: 25px;
+	width: 50px;
+	height: 50px;
 }
 
 /* MEDIA QUERY(MEDIUM) */

@@ -12,33 +12,41 @@ const portofolio = () => {
       <div className="container portofolio__container">
         <article className='portofolio__item'>
           <div className="portofolio__item-image">
-            <img src={IMG1} alt="" />
+          <a href="https://github.com/manansaipi/FinalPDT#ticketing-web-application" target="_blank" rel="noreferrer"><img src={IMG1} alt="" /></a>
+            
           </div>
-          <h3>Ticketing Web Application</h3>
+          <h3> <a href="https://github.com/manansaipi/FinalPDT#ticketing-web-application"  style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noreferrer" >Ticketing Web Application</a></h3>
+         
           <div className="portofolio__item-cta">
-            <a href="https://github.com/manansaipi/FinalPDT#ticketing-web-application" className='btn' target="_blank" rel="noreferrer">Github</a>
+            <a href="https://github.com/manansaipi/FinalPDT" className='btn' target="_blank" rel="noreferrer">Github</a>
             <a href="https://www.youtube.com/watch?v=X61UqD_2ywQ&ab_channel=AbdulMannanSaipi" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
           </div>
         </article>
         <article className='portofolio__item'>
           <div className="portofolio__item-image">
-            <img src="https://img.youtube.com/vi/hubttbMuBt0/0.jpg" alt="" />
+          <a href="https://github.com/manansaipi/finalssip#ticketing-web-application" target="_blank" rel="noreferrer"> <img src="https://img.youtube.com/vi/hubttbMuBt0/0.jpg" alt="" /></a>
+           
           </div>
-          <h3>To-do list Mobile Application</h3>
+           <h3>
+          <a href="https://github.com/manansaipi/finalssip#ticketing-web-application"  style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noreferrer" >To-do list Mobile Application</a></h3>
           <div className="portofolio__item-cta">
-            <a href="https://github.com/manansaipi/final_wpm#to-do-list-mobile-application" className='btn' target="_blank" rel="noreferrer">Github</a>
+            <a href="https://github.com/manansaipi/final_wpm" className='btn' target="_blank" rel="noreferrer">Github</a>
             <a href="https://drive.google.com/file/d/1s6V5Nzl7FXEbAWJ9MVQ39xdk62G8iuud/view" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
           </div>
         </article>
         <article className='portofolio__item'>
           <div className="portofolio__item-image">
-            <img src={IMG2} alt="" />
+          <a href="https://github.com/manansaipi/finalssip#ticketing-web-application" target="_blank" rel="noreferrer" > <img src={IMG2} alt="" /></a>
+           
           </div>
-          <h3>Ticketing Web Application (Laravel)</h3>
+             <h3>
+          <a href="https://github.com/manansaipi/finalssip#ticketing-web-application"  style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noreferrer" >Ticketing Web Application (Laravel)</a></h3>
+       
           <div className="portofolio__item-cta">
-            <a href="https://github.com/manansaipi/finalssip#ticketing-web-application" className='btn' target="_blank" rel="noreferrer">Github</a>
+            <a href="https://github.com/manansaipi/finalssip" className='btn' target="_blank" rel="noreferrer">Github</a>
             <a href="https://drive.google.com/file/d/10F2BOJLSttfLvppUDpBly4JWbE_nY4pA/view" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
           </div>
+             <div style={{ margin: '20px' }}>Content</div>
         </article>
       </div>
 

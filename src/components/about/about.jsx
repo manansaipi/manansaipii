@@ -45,6 +45,7 @@ const about = () => {
 
 
     </section>
+    
 
   )
 }
