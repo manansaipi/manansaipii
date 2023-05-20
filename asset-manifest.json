@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/myporto/static/css/main.aeac11b8.css",
+    "main.js": "/myporto/static/js/main.5ef129cc.js",
+    "static/media/boben.png": "/myporto/static/media/boben.615c0b5445c0227394f7.png",
+    "static/media/all-ticket.png": "/myporto/static/media/all-ticket.0018c8a6bfb283289197.png",
+    "static/media/admin-dashboard.png": "/myporto/static/media/admin-dashboard.6a01b466eb1f3a75d0c4.png",
+    "index.html": "/myporto/index.html",
+    "main.aeac11b8.css.map": "/myporto/static/css/main.aeac11b8.css.map",
+    "main.5ef129cc.js.map": "/myporto/static/js/main.5ef129cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aeac11b8.css",
+    "static/js/main.5ef129cc.js"
+  ]
+}
