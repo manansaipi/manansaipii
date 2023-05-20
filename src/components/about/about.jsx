@@ -13,42 +13,39 @@ const about = () => {
 
       <div className="container about__container">
         <div className="about__me">
-        <div className="about__me-image">
-          <img src="https://storage.googleapis.com/manan_img/boben.png" alt="About Image" />
+          <div className="about__me-image">
+            <img src={ME} alt="me" />
+          </div>
+        </div>
+
+        <div className="about__content">
+          <div className="about__cards">
+            <article className='about__card'>
+              <FaAward className='about__icon' />
+              <h5>Experience</h5>
+              <small>1+ Years</small>
+            </article>
+            <article className='about__card'>
+              <FiUsers className='about__icon' />
+              <h5>Client</h5>
+              <small>-</small>
+            </article>
+            <article className='about__card'>
+              <VscFolderLibrary className='about__icon' />
+              <h5>Project</h5>
+              <small>5+</small>
+            </article>
+          </div>
+
+          <p>
+            I'm a student from President University studying Information Technology. I am deeply passionate about programming and highly skilled in languages such as PHP and Dart. I have a strong understanding of frameworks like Laravel and Flutter. Additionally, I have experience in database management and computer networking. Currently, I am expanding my skills by learning Node.js to build RESTful APIs. As part of the Bangkit Academy, I have been exploring cloud computing on Google Cloud Platform (GCP) and building a cloud-based Android app. With a strong academic record and participation in relevant extracurricular activities, I am motivated to continuously improve my skills. I am excited to apply my knowledge and abilities to real-world problems and make a positive impact in the field of technology.
+          </p>
         </div>
       </div>
 
-      <div className="about__content">
-        <div className="about__cards">
-          <article className='about__card'>
-            <FaAward className='about__icon'/>
-            <h5>Experience</h5>
-            <small>1+ Years</small>
-          </article>
-          <article className='about__card'>
-            <FiUsers className='about__icon'/>
-            <h5>Client</h5>
-            <small>-</small>
-          </article>
-          <article className='about__card'>
-            <VscFolderLibrary className='about__icon'/>
-            <h5>Project</h5>
-            <small>5+</small>
-          </article>
-        </div>
-
-        <p>
-       As a student at President University studying Information Technology, I am highly skilled in programming languages such as PHP and Dart. I have a strong understanding of frameworks such as Laravel and Flutter and have experience in database management and computer networking. I am motivated to learn and continuously improve my skills, as evidenced by my strong academic record and participation in relevant extracurricular activities. I am excited to apply my knowledge and abilities to real-world problems and make a positive impact in the field of technology.
-        </p>
-
-        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-
-      </div>
-      </div>
-      
 
     </section>
-    
+
   )
 }
 
