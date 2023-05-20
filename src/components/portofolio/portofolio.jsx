@@ -44,7 +44,7 @@ const portofolio = () => {
        
           <div className="portofolio__item-cta">
             <a href="https://github.com/manansaipi/finalssip" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://drive.google.com/file/d/10F2BOJLSttfLvppUDpBly4JWbE_nY4pA/view" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
+            <a href="https://drive.google.com/file/d/11ZjAQnNHXwOAOayjev5PypllmgN1MXXl/view?usp=sharing" className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
           </div>
             
         </article>
