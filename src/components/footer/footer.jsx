@@ -14,7 +14,7 @@ const footer = () => {
       </div>
     </footer>
   </div>
-   
+    
   )
 }
 const styles = {

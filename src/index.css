@@ -50,7 +50,6 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-bg);
