@@ -1,33 +1,42 @@
 nav {
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15PX);
+  background: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Distribute items evenly */
+  padding: 0.3rem 0;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s;
 }
 
-nav a{
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+nav.scrolled {
+  background-color: rgba(192, 192, 192, 0.8); /* Use rgba to set a transparent grey color */
 }
 
-nav a:hover{
-    background: rgba(0, 0, 0, 0.3);
-}
-nav a.active{
-    background: var(--color-bg);
-    color: var(--color-white);
+
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+  opacity: 0; /* Add opacity property to hide the text initially */
+  transition: opacity 0.3s; /* Add a transition for smooth opacity change */
 }
 
+nav.scrolled a {
+  opacity: 1; /* Make the text appear when the navbar is scrolled */
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}

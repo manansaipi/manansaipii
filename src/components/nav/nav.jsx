@@ -1,21 +1,36 @@
-import React from 'react'
-import './nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {BiBookBookmark} from 'react-icons/bi'
-import {RiServiceLine} from 'react-icons/ri'
-import {BiMessageSquareDetail} from 'react-icons/bi'
+import React, { useEffect, useState } from 'react';
+import './nav.css';
+const Nav = () => {
+  const [scrolled, setScrolled] = useState(false);
 
-const nav = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <nav>
-      <a href="#header" className='active'><AiOutlineHome/></a>
-      <a href="#about"><AiOutlineUser/></a>
-      <a href="#experience"><BiBookBookmark/></a>
-      <a href="#services"><RiServiceLine/></a>
-      <a href="#contact"><BiMessageSquareDetail/></a>
+    <nav className={scrolled ? 'scrolled' : ''}>
+      <a href="#header" className="active">
+        Home
+      </a>
+      <a href="#about">
+        About
+      </a>
+      <a href="#experience">
+        Experience
+      </a>
     </nav>
-  )
-}
+  );
+};
 
-export default nav
+export default Nav;
