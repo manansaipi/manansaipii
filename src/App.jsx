@@ -99,7 +99,7 @@ const App = () => {
         <>
           <Header />
           <About />
-          <Portofolio />
+          <Portofolio /> 
           <Footer />
         </>
       )}
