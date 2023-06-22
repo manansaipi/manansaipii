@@ -1,11 +1,9 @@
 import React, { useEffect }  from 'react'
 import './header.css'
-// eslint-disable-next-line
 import Lottie from 'lottie-react'
-// eslint-disable-next-line
+import linkedin from '../../assets/81332-linkedin.json'
 import animationData from '../../assets/81333-github.json'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import instagram from '../../assets/64332-instagram-logo-animation.json'
 
 const Header = () => {
  useEffect(() => {
@@ -62,16 +60,33 @@ const Header = () => {
           <h1 class="h1">Hi, I’m <span class="span elvina typed-text"></span><span class="cursor">&nbsp;</span></h1>
           <h3 class="lead">President University Student</h3>  
               <div class="sosial-media">
-                   <a href="https://www.linkedin.com/in/abdulmannansaipi/" target="blank"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-                
-                  <a href="https://github.com/manansaipi" target="blank"><i class="fab fa-github fa-2x"></i></a>
-               
-                  <a href="https://www.instagram.com/manansaipi/" target="blank"><i class="fab fa-instagram fa-2x"></i>
+                   <a href="https://www.linkedin.com/in/abdulmannansaipi/" target="blank">
+                   <Lottie
+                    animationData={linkedin}
+                    style={{ width: '50px', height: '50px' }} // Adjust the width and height as needed
+                  />
+                   </a>
+
+                   <a href="https://www.instagram.com/manansaipi/" target="blank">
+                  <Lottie
+                    animationData={instagram}
+                    style={{ width: '50px', height: '50px' }} // Adjust the width and height as needed
+                  />
+                 
                   </a>
             
+                  <a href="https://github.com/manansaipi" target="blank">
+                  <Lottie
+                    animationData={animationData}
+                    style={{ width: '50px', height: '50px' }} // Adjust the width and height as needed
+                  />
+                  </a>
+               
+                  
               </div>
         </div>
       </div>
+     
     </section>
 
 

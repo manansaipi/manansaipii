@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from './components/header/header'
-import SplashScreen from './components/splashScreen'
 // import Nav from './components/nav/nav'
 import About from './components/about/about'
 // import Experience from './components/experience/experience'
@@ -77,13 +76,6 @@ const LatoStylesheet = () => (
 
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust the duration as per your preference
-  }, []);
   return (
     <>
     
@@ -93,16 +85,11 @@ const App = () => {
       <PoppinsStylesheet />
       <AbrilFatfaceStylesheet />
       <LatoStylesheet />
-      {loading ? (
-        <SplashScreen />
-      ) : (
-        <>
-          <Header />
-          <About />
-          <Portofolio /> 
-          <Footer />
-        </>
-      )}
+      <Header />
+      <About />
+      <Portofolio /> 
+      <Footer />
+
     </>
   )
 }
