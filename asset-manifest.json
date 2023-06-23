@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/manansaipii/static/css/main.c53f708f.css",
-    "main.js": "/manansaipii/static/js/main.9597d3b5.js",
+    "main.js": "/manansaipii/static/js/main.a01a353d.js",
     "static/media/boben.png": "/manansaipii/static/media/boben.615c0b5445c0227394f7.png",
     "static/media/all-ticket.png": "/manansaipii/static/media/all-ticket.0018c8a6bfb283289197.png",
     "static/media/admin-dashboard.png": "/manansaipii/static/media/admin-dashboard.6a01b466eb1f3a75d0c4.png",
     "index.html": "/manansaipii/index.html",
     "main.c53f708f.css.map": "/manansaipii/static/css/main.c53f708f.css.map",
-    "main.9597d3b5.js.map": "/manansaipii/static/js/main.9597d3b5.js.map"
+    "main.a01a353d.js.map": "/manansaipii/static/js/main.a01a353d.js.map"
   },
   "entrypoints": [
     "static/css/main.c53f708f.css",
-    "static/js/main.9597d3b5.js"
+    "static/js/main.a01a353d.js"
   ]
 }
