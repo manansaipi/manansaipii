@@ -112,6 +112,7 @@ header {
 @media screen and (max-width: 1024px) {
     header {
         height: 68hv;
+    	padding-top: 5rem;
     }
 }
 
@@ -120,6 +121,7 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 105vh;
+    	padding-top: 0rem;
     }
 	.xs\:bottom-10 {
     bottom: 20px;
