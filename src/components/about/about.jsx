@@ -6,7 +6,7 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 import ME from '../../assets/boben.png'
 import { motion } from 'framer-motion'
 import { SectionWrapper } from '../../hoc'
-import { fadeIn, textVariant, zoomIn } from '../../utils/motion'
+import { fadeIn, textVariant } from '../../utils/motion'
 
 const cards = [
   {
