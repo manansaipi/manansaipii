@@ -16,10 +16,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Authenticate with GitHub Packages
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
+        run: |
+          git config --global user.email "$EMAIL"
+          git config --global user.name "$NAME"
 
       - name: Install dependencies
         run: npm i
