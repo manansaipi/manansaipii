@@ -29,7 +29,7 @@ const cards = [
 
 const about = () => {
   return (
-    <>
+    <> 
 
       <div className="about">
         <motion.div  variants={textVariant()}>
