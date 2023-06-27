@@ -1,3 +1,6 @@
+.about {
+    margin-top: -200px;
+}
 .about__container {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -67,6 +70,9 @@
 /* MEDIA QUERY(MEDIUM) */
 
 @media screen and (max-width: 1024px) {
+    .about {
+        margin-top: -170px;
+    }
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -83,6 +89,9 @@
 /* MEDIA QUERY(SMALL) */
 
 @media screen and (max-width: 600px) {
+    .about {
+        margin-top: -250px;
+    }
     .about__me{
         width: 65%;
         margin: 0 auto 3rem;

@@ -1,7 +1,11 @@
+
 body {
     background-image: none;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.custom-border-class {
+  border-color: rgb(192, 192, 192); 
 }
 
 header {
@@ -115,9 +119,11 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 105vh;
     }
-
+	.xs\:bottom-10 {
+    bottom: 20px;
+  	}
     .header__social,
     .scroll_down {
         display: none;
