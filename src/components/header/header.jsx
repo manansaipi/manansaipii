@@ -1,9 +1,5 @@
 import React, { useEffect }  from 'react'
 import './header.css'
-// eslint-disable-next-line
-import Lottie from 'lottie-react'
-// eslint-disable-next-line
-import animationData from '../../assets/81333-github.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion'

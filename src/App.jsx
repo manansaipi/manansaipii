@@ -5,9 +5,11 @@ import About from './components/about/about'
 import Experience from './components/experience/experience'
 // import Services from './components/services/services'
 import Portofolio from './components/portofolio/portofolio'
+import Tech from './components/tech/Tech'
 // import Testimoni from './components/testimoni/testimoni'
 // import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
+import PreLoader from './components/PreLoader'
 
 
 
@@ -78,17 +80,19 @@ const LatoStylesheet = () => (
 const App = () => {
   return (
     <>
-    
      <FontAwesomeStylesheet />
       <BootstrapStylesheet />
       <FontawesomeStylesheet />
       <PoppinsStylesheet />
       <AbrilFatfaceStylesheet />
       <LatoStylesheet />
+      <PreLoader/>
       <Header />
       <About />
       <Experience />
       <Portofolio /> 
+      <Tech /> 
+
       <Footer />
 
     </>
