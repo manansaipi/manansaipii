@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { SectionWrapper } from '../../hoc'
 import { textVariant } from '../../utils/motion'
 import { fadeIn } from '../../utils/motion'
+import {Tilt} from 'react-tilt'
 
 
 const projects = [
@@ -45,6 +46,13 @@ const portofolio = () => {
       <div className="container portofolio__container" style={{ marginBottom: '100px' }}>
          {projects.map((project, index) => (
       <motion.div  variants={fadeIn("up", "spring", index * 0.6, 0.75)}>
+       <Tilt
+                    options={{ 
+                      max: 30,
+                      scale: 1.1,
+                      speed: 350
+                     }}
+                  >
             <article className='portofolio__item' key={index}>
               <div className="portofolio__item-image">
                 <a href={project.readme} target="_blank" rel="noreferrer">
@@ -61,6 +69,7 @@ const portofolio = () => {
                 <a href={project.demo} className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
               </div>
             </article>
+        </Tilt>
       </motion.div>
           ))}
       </div>

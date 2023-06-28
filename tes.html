@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Animation with Typing Effect</title>
+  <style>
+    #animated-text {
+      visibility: hidden;
+      white-space: pre;
+    }
+
+    .cursor {
+      display: inline-block;
+      vertical-align: bottom;
+      animation: blinkCursor 0.7s infinite;
+    }
+
+    @keyframes blinkCursor {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p id="animated-text"></p>
+
+  <script>
+    const animatedText = document.getElementById('animated-text');
+    const textContent = `I'm a student from President University studying Information Technology. I am deeply passionate about programming and highly skilled in languages such as PHP and Dart. I have a strong understanding of frameworks like Laravel and Flutter. Additionally, I have experience in database management and computer networking. Currently, I am expanding my skills by learning Node.js to build RESTful APIs. As part of the Bangkit Academy, I have been exploring cloud computing on Google Cloud Platform (GCP) and building a cloud-based Android app. With a strong academic record and participation in relevant extracurricular activities, I am motivated to continuously improve my skills. I am excited to apply my knowledge and abilities to real-world problems and make a positive impact in the field of technology.`;
+
+    let i = 0;
+    const interval = setInterval(() => {
+      animatedText.textContent += textContent[i];
+      i++;
+
+      if (i >= textContent.length) {
+        clearInterval(interval);
+        animatedText.innerHTML += '<span id="cursor" class="cursor">|</span>';
+      }
+    }, 50);
+  </script>
+</body>
+</html>

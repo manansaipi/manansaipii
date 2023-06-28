@@ -1,4 +1,5 @@
 import React from 'react'
+import {Tilt} from 'react-tilt'
 import './about.css'
 import { FaAward } from 'react-icons/fa';
 import { AiFillStar } from 'react-icons/ai';
@@ -51,13 +52,21 @@ const about = () => {
             <div className="about__cards">
               {cards.map((card, index) => (
                 <motion.div  variants={fadeIn("left","", index * 0.5, 0.75)}>
-                  <article className='about__card' key={index}>
-                    <div className="about__icon flex justify-center items-center mb-1">
-                      {card.icon}
-                    </div>
-                    <h5>{card.title}</h5>
-                    <small>{card.content}</small>
-                  </article>
+                  <Tilt
+                    options={{ 
+                      max: 50,
+                      scale: 1.15,
+                      speed: 450
+                     }}
+                  >
+                    <article className='about__card' key={index}>
+                      <div className="about__icon flex justify-center items-center mb-1">
+                        {card.icon}
+                      </div>
+                      <h5>{card.title}</h5>
+                      <small>{card.content}</small>
+                    </article>
+                  </Tilt>
                 </motion.div>
               ))}
             </div>
