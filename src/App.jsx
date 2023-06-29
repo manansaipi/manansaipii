@@ -3,7 +3,7 @@ import Header from './components/header/header'
 // import Nav from './components/nav/nav'
 import About from './components/about/about'
 import Experience from './components/experience/experience'
-// import Services from './components/services/services'
+import Certificate from './components/certificate/certificate'
 import Portofolio from './components/portofolio/portofolio'
 import Tech from './components/tech/Tech'
 // import Testimoni from './components/testimoni/testimoni'
@@ -90,9 +90,9 @@ const App = () => {
       <Header />
       <About />
       <Experience />
+      <Certificate />
       <Portofolio /> 
       <Tech /> 
-
       <Footer />
 
     </>

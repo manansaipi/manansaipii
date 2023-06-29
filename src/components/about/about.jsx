@@ -36,7 +36,7 @@ const about = () => {
         <motion.div  variants={textVariant()}>
           <section id='about'>
             <h5>Get To Know</h5>
-            <h2>About Me</h2>
+            <h2>Me</h2>
           </section>
         </motion.div>
           <div className="container about__container" >
