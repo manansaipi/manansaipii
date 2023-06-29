@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/manansaipii/static/css/main.b090f992.css",
-    "main.js": "/manansaipii/static/js/main.22659518.js",
+    "main.css": "/manansaipii/static/css/main.7592c424.css",
+    "main.js": "/manansaipii/static/js/main.64b608e5.js",
     "static/media/tripguide.png": "/manansaipii/static/media/tripguide.991986c795ea140ba063.png",
     "static/media/carrent.png": "/manansaipii/static/media/carrent.6b1e855ede285c40b77f.png",
     "static/media/jobit.png": "/manansaipii/static/media/jobit.755da7149642fd049273.png",
+    "static/media/coursera1.png": "/manansaipii/static/media/coursera1.ca7649b4a1bb5703654e.png",
     "static/media/boben.png": "/manansaipii/static/media/boben.615c0b5445c0227394f7.png",
+    "static/media/dicoding2.png": "/manansaipii/static/media/dicoding2.35f82ade2a2d7ae27973.png",
+    "static/media/dicoding4.png": "/manansaipii/static/media/dicoding4.c57da1a5cf80cbcb0ccf.png",
+    "static/media/dicoding3.png": "/manansaipii/static/media/dicoding3.b9a4917b62d9c7601e16.png",
+    "static/media/dicoding1.png": "/manansaipii/static/media/dicoding1.4f034730900161685d0e.png",
     "static/media/gcp.png": "/manansaipii/static/media/gcp.dade32d4d899f5e492e9.png",
     "static/media/all-ticket.png": "/manansaipii/static/media/all-ticket.0018c8a6bfb283289197.png",
+    "static/media/gcsb.png": "/manansaipii/static/media/gcsb.85cb867ad1da91346f10.png",
     "static/media/admin-dashboard.png": "/manansaipii/static/media/admin-dashboard.6a01b466eb1f3a75d0c4.png",
     "static/media/web.png": "/manansaipii/static/media/web.c0cb2cc13791a26822d3.png",
     "static/media/flutter.png": "/manansaipii/static/media/flutter.37d5ebb18b1ecf6877c0.png",
@@ -22,11 +28,11 @@
     "static/media/menu.svg": "/manansaipii/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
-    "main.b090f992.css.map": "/manansaipii/static/css/main.b090f992.css.map",
-    "main.22659518.js.map": "/manansaipii/static/js/main.22659518.js.map"
+    "main.7592c424.css.map": "/manansaipii/static/css/main.7592c424.css.map",
+    "main.64b608e5.js.map": "/manansaipii/static/js/main.64b608e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b090f992.css",
-    "static/js/main.22659518.js"
+    "static/css/main.7592c424.css",
+    "static/js/main.64b608e5.js"
   ]
 }
