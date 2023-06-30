@@ -59,21 +59,6 @@ const ExperienceCard = ({ experiences }) => {
 }
 
 const Experience = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 600);
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -91,11 +76,7 @@ const Experience = () => {
           </VerticalTimeline>
         </div>
       </div>
-      <motion.div variants={textVariant(1)}>
-        <section className={`mt-60  ${isMobile ? '-mb-40' : '-mb-60'}`} id='Experience'>
-          <h2>Certificates</h2>
-        </section>
-      </motion.div>
+      
     </>
   )
 }
