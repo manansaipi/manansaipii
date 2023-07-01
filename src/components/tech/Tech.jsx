@@ -37,7 +37,7 @@ const Tech = () => {
           animationVariant = textVariant();
         } else {
           const animationDirection = index < middleIndex ? "right" : "left";
-          animationVariant = fadeIn(animationDirection, "", distanceFromMiddle * 0.6, 0.75);
+          animationVariant = fadeIn(animationDirection, "", distanceFromMiddle * 0.5, 0.75);
         }
         console.log(index);
         // Show the elements starting from the middle and moving outward
