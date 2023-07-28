@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/manansaipii/static/css/main.7b918881.css",
-    "main.js": "/manansaipii/static/js/main.d7d3fc73.js",
-    "static/media/tripguide.png": "/manansaipii/static/media/tripguide.991986c795ea140ba063.png",
+    "main.css": "/manansaipii/static/css/main.7d756a45.css",
+    "main.js": "/manansaipii/static/js/main.46cef5e2.js",
     "static/media/carrent.png": "/manansaipii/static/media/carrent.6b1e855ede285c40b77f.png",
-    "static/media/jobit.png": "/manansaipii/static/media/jobit.755da7149642fd049273.png",
     "static/media/coursera1.png": "/manansaipii/static/media/coursera1.ca7649b4a1bb5703654e.png",
     "static/media/boben.png": "/manansaipii/static/media/boben.615c0b5445c0227394f7.png",
+    "static/media/bangkit.png": "/manansaipii/static/media/bangkit.c0fe0cb8e6c4cbbb6e13.png",
     "static/media/dicoding2.png": "/manansaipii/static/media/dicoding2.35f82ade2a2d7ae27973.png",
     "static/media/dicoding4.png": "/manansaipii/static/media/dicoding4.c57da1a5cf80cbcb0ccf.png",
     "static/media/dicoding3.png": "/manansaipii/static/media/dicoding3.b9a4917b62d9c7601e16.png",
@@ -15,24 +14,22 @@
     "static/media/all-ticket.png": "/manansaipii/static/media/all-ticket.0018c8a6bfb283289197.png",
     "static/media/gcsb.png": "/manansaipii/static/media/gcsb.85cb867ad1da91346f10.png",
     "static/media/admin-dashboard.png": "/manansaipii/static/media/admin-dashboard.6a01b466eb1f3a75d0c4.png",
-    "static/media/web.png": "/manansaipii/static/media/web.c0cb2cc13791a26822d3.png",
     "static/media/flutter.png": "/manansaipii/static/media/flutter.37d5ebb18b1ecf6877c0.png",
     "static/media/starbucks.png": "/manansaipii/static/media/starbucks.c04c7ebdc75c49f6b068.png",
     "static/media/tesla.png": "/manansaipii/static/media/tesla.c04c7ebdc75c49f6b068.png",
     "static/media/backend.png": "/manansaipii/static/media/backend.08c8d93b8142c41a9e63.png",
     "static/media/laravel.png": "/manansaipii/static/media/laravel.f3ad6dc33fb0206ee8c2.png",
-    "static/media/mobile.png": "/manansaipii/static/media/mobile.15e7b89f1018dcdba6e7.png",
     "static/media/creator.png": "/manansaipii/static/media/creator.f8923ce18390029928ac.png",
     "static/media/github.png": "/manansaipii/static/media/github.ed1c06d925fff0b57e32.png",
     "static/media/close.svg": "/manansaipii/static/media/close.52ab0d39b2c514b8322115c951eac5a2.svg",
     "static/media/menu.svg": "/manansaipii/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
-    "main.7b918881.css.map": "/manansaipii/static/css/main.7b918881.css.map",
-    "main.d7d3fc73.js.map": "/manansaipii/static/js/main.d7d3fc73.js.map"
+    "main.7d756a45.css.map": "/manansaipii/static/css/main.7d756a45.css.map",
+    "main.46cef5e2.js.map": "/manansaipii/static/js/main.46cef5e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b918881.css",
-    "static/js/main.d7d3fc73.js"
+    "static/css/main.7d756a45.css",
+    "static/js/main.46cef5e2.js"
   ]
 }
