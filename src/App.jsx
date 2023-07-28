@@ -92,7 +92,7 @@ const App = () => {
       <Experience />
       <Certificate />
       <Portofolio /> 
-      <Tech /> 
+      <Tech />
       <Footer />
 
     </>
