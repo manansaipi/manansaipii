@@ -79,9 +79,10 @@ const experiences = [
     iconBg: "#f1f1f1",
     date: "May 2023 - June 2023",
     points: [
+      "Developed RESTful APIs to enable seamless communication between the mobile app and the cloud services.",
       "Set up the cloud infrastructure, including Cloud MySQL, Cloud Storage, and configured App Engine Environment.",
       "Integrated Firebase Realtime Database and Implemented Firebase Authentication for secure user authentication and authorization.",
-      "Developed RESTful APIs to enable seamless communication between the mobile app and the cloud services.",
+      
       "Utilized CI/CD pipelines to automate the deployment process of a Node.js application on Google Cloud Platform's App Engine.",
       "Deploying a machine learning model into Cloud Run by containerizing the application using Docker."
     ],
