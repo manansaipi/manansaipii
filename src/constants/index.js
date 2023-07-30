@@ -80,11 +80,13 @@ const experiences = [
     date: "May 2023 - June 2023",
     points: [
       "Developed RESTful APIs to enable seamless communication between the mobile app and the cloud services.",
-      "Set up the cloud infrastructure, including Cloud MySQL, Cloud Storage, and configured App Engine Environment.",
-      "Integrated Firebase Realtime Database and Implemented Firebase Authentication for secure user authentication and authorization.",
-      
-      "Utilized CI/CD pipelines to automate the deployment process of a Node.js application on Google Cloud Platform's App Engine.",
-      "Deploying a machine learning model into Cloud Run by containerizing the application using Docker."
+      "Implemented user authentication, ticket submission, image upload, profile management, user feedback and chat features",
+      "Employed the MVC (Model-View-Controller) design pattern to achieve a well-defined division of responsibilities and a codebase that is easy to maintain",
+      "Implemented continuous integration and continuous deployment (CI/CD) pipelines, enabling automated and streamlined deployment processes, resulting in faster iterations and improved development efficiency",
+      "Set up a cloud infrastructure on Google Cloud Platform, deploying Cloud MySQL and Cloud Storage to manage and store data effectively",
+      "Configured the App Engine Environment for hosting the backend services",
+      "Utilized CI/CD pipelines to automate the deployment process of a Node.js application on Google Cloud Platform's App Engine",
+      "Successfully containerized the machine learning model application using Docker and deployed it into Cloud Run"
     ],
   },
   {
