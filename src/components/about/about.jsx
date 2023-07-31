@@ -72,7 +72,8 @@ const about = () => {
             </div>
             <motion.div  variants={fadeIn("up","", 1, 0.75)}>
               <p>
-                I'm a student from President University studying Information Technology. I am deeply passionate about programming and highly skilled in languages such as PHP and Dart. I have a strong understanding of frameworks like Laravel and Flutter. Additionally, I have experience in database management and computer networking. Currently, I am expanding my skills by learning Node.js to build RESTful APIs. As part of the Bangkit Academy, I have been exploring cloud computing on Google Cloud Platform (GCP) and building a cloud-based Android app. With a strong academic record and participation in relevant extracurricular activities, I am motivated to continuously improve my skills. I am excited to apply my knowledge and abilities to real-world problems and make a positive impact in the field of technology.
+                As a student at President University, I am deeply passionate about programming. Proficient in PHP and Dart, I have a strong understanding of frameworks like Laravel and Flutter. Currently, I am expanding my skills by learning Node.js, particularly focusing on the Express.js framework, to build RESTful APIs. As part of the Bangkit Academy, I have been exploring cloud computing on the Google Cloud Platform (GCP). With a strong academic record and participation in relevant extracurricular activities, I am motivated to continuously improve my skills. I am excited to apply my knowledge and abilities to realworld problems and make a positive impact in the field of technology.
+
               </p>
             </motion.div>
 
