@@ -72,23 +72,6 @@ const technologies = [
 ];
 
 const experiences = [
-  // {
-  //   title: "Backend & Cloud Engineer",
-  //   company_name: "Capstone Project",
-  //   icon: starbucks,
-  //   iconBg: "#f1f1f1",
-  //   date: "May 2023 - June 2023",
-  //   points: [
-  //     "Developed RESTful APIs to enable seamless communication between the mobile app and the cloud services.",
-  //     "Implemented user authentication, ticket submission, image upload, profile management, user feedback and chat features",
-  //     "Employed the MVC (Model-View-Controller) design pattern to achieve a well-defined division of responsibilities and a codebase that is easy to maintain",
-  //     "Implemented continuous integration and continuous deployment (CI/CD) pipelines, enabling automated and streamlined deployment processes, resulting in faster iterations and improved development efficiency",
-  //     "Set up a cloud infrastructure on Google Cloud Platform, deploying Cloud MySQL and Cloud Storage to manage and store data effectively",
-  //     "Configured the App Engine Environment for hosting the backend services",
-  //     "Utilized CI/CD pipelines to automate the deployment process of a Node.js application on Google Cloud Platform's App Engine",
-  //     "Successfully containerized the machine learning model application using Docker and deployed it into Cloud Run"
-  //   ],
-  // },
   {
     title: "President University",
     company_name: "Bachelor Degree in Informatics",
@@ -96,7 +79,7 @@ const experiences = [
     iconBg: "#f1f1f1",
     date: "Sep 2021 - Sep 2024 (Expected)",
     points: [
-      "Current GPA : 3.75/4.00",
+      "Current GPA : 3.75/4.00", 
       "Related Courses :  Server Side Internet Programming, Coding and Big Data, Database System, Data Structures and Algorithms, Object Oriented and Visual Programming, Web Programming, Wireless and Mobile Programming",
     ],
   },
