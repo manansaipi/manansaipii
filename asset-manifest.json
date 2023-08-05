@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/manansaipii/static/css/main.5c70d517.css",
-    "main.js": "/manansaipii/static/js/main.c6e40a82.js",
+    "main.js": "/manansaipii/static/js/main.d10c215f.js",
     "static/media/carrent.png": "/manansaipii/static/media/carrent.6b1e855ede285c40b77f.png",
     "static/media/coursera1.png": "/manansaipii/static/media/coursera1.ca7649b4a1bb5703654e.png",
     "static/media/boben.png": "/manansaipii/static/media/boben.615c0b5445c0227394f7.png",
@@ -26,10 +26,10 @@
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
     "main.5c70d517.css.map": "/manansaipii/static/css/main.5c70d517.css.map",
-    "main.c6e40a82.js.map": "/manansaipii/static/js/main.c6e40a82.js.map"
+    "main.d10c215f.js.map": "/manansaipii/static/js/main.d10c215f.js.map"
   },
   "entrypoints": [
     "static/css/main.5c70d517.css",
-    "static/js/main.c6e40a82.js"
+    "static/js/main.d10c215f.js"
   ]
 }
