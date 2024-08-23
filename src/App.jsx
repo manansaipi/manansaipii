@@ -86,7 +86,7 @@ const App = () => {
       <PoppinsStylesheet />
       <AbrilFatfaceStylesheet />
       <LatoStylesheet />
-      <PreLoader/>
+      {/* <PreLoader/> */}
       <Header />
       <About />
       <Experience />

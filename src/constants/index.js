@@ -10,7 +10,9 @@ import {
   tesla,
   carrent,
   flutter,
-  gcp
+  gcp,
+  dpr,
+  mattel
 } from "../assets";
 
 export const navLinks = [
@@ -77,10 +79,10 @@ const experiences = [
     company_name: "Bachelor Degree in Informatics",
     icon: starbucks,
     iconBg: "#f1f1f1",
-    date: "Sep 2021 - Sep 2024 (Expected)",
+    date: "Sep 2021 - Dec 2024 (Expected)",
     points: [
-      "Current GPA : 3.75/4.00", 
-      "Related Courses :  Server Side Internet Programming, Coding and Big Data, Database System, Data Structures and Algorithms, Object Oriented and Visual Programming, Web Programming, Wireless and Mobile Programming",
+      "Current GPA : 3.88/4.00", 
+      "Related Courses :  Server Side Internet Programming, Coding and Big Data, Database System, Data Structures and Algorithms, Object Oriented and Visual Programming, Web Programming, Wireless and Mobile Programming, Software Engineering, Network Security, Internet of Things, Artificial Intelligence, 	Virtual Reality and Game Development, Operating System Design, 	Multimedia Application Development",
     ],
   },
   {
@@ -90,13 +92,36 @@ const experiences = [
     iconBg: "#f1f1f1",
     date: "Feb 2023 - July 2023",
     points: [
-      "Effective Collaboration: Successfully working in diverse teams, communicating, cooperating, and solving problems together to complete various projects.",
-      "Cloud Computing Expertise: Developed in-depth knowledge of Google Cloud Platform (GCP) and demonstrated proficiency in deploying and managing cloud-based applications with scalability, reliability, and security.",
-      "English Language Proficiency: Developed strong English language skills through constant practice and immersion in an Englishspeaking environment.",
-      "Industry-Relevant Projects: Engaged in projects aligned with industry standards, collaborating with industry partners and mentors.Gained practical experience and tackled real-world challenges.",
-      "Leadership Abilities: Demonstrated leadership by organizing study groups, mentoring peers, and leading project teams. Showcased strong decision-making, problem-solving, and motivational skills.",
-      "Continuous Learning: Actively seeking new knowledge, and staying updated with the latest trends in cloud computing and related fields for personal and professional growth."
+      "Gained expertise in cloud computing concepts, including service models (IaaS, PaaS, SaaS) and cloud architecture.",
+      "Developed proficiency in Google Cloud Platform (GCP) services, including Compute Engine, App Engine, Cloud Run, Cloud Storage, Cloud SQL, etc",
+      "Completed hands-on projects, such as developing and deploying scalable APIs on GCP, utilizing App Engine for hosting, Cloud Storage for managing static assets, and Cloud SQL for data storage.",
+      "Implemented continuous integration and continuous deployment (CI/CD) pipelines, automating deployment processes for faster iterations and improved development efficiency.",
+      "Collaborated in a team to integrate APIs with frontend applications, ensuring seamless data flow and user experience."
     ],
+  },
+  {
+    title: "Sekretariat Jendral DPR RI",
+    company_name: "IT Programmer Intern",
+    icon: dpr,
+    iconBg: "#f1f1f1",
+    date: "Aug 2023 - Dec 2023",
+    points: [
+      "Developed software similar to Tableau, allowing users can create custom dashboards by choosing from a variety of charts. Users have the flexibility to choose and arrange different charts on their dashboard, making the content highly adaptable to their preferences.",
+      "Designed an efficient data retrieval system (scheduler) using Node.js, which periodically updates a smaller dataset from the main database, ensuring faster query times for the dashboard website.",
+      "Played a key role in designing the infrastructure for the \"Improvisasi Dashboard Website Program Legislasi Nasional DPR\" proposal. This included system design, architectural design, detailed design, use case diagrams, activity diagrams, and entity relationship diagrams, with a focus on improving the efficiency and accountability of the DPR website using the RUU dataset."
+      ],
+  },
+  {
+    title: "PT. Mattel Indonesia",
+    company_name: "IT Develooper Intern",
+    icon: mattel,
+    iconBg: "#f1f1f1",
+    date: "Jan 2024 - Dec 2024",
+    points: [
+      "Developed software similar to Tableau, allowing users can create custom dashboards by choosing from a variety of charts. Users have the flexibility to choose and arrange different charts on their dashboard, making the content highly adaptable to their preferences.",
+      "Designed an efficient data retrieval system (scheduler) using Node.js, which periodically updates a smaller dataset from the main database, ensuring faster query times for the dashboard website.",
+      "Played a key role in designing the infrastructure for the \"Improvisasi Dashboard Website Program Legislasi Nasional DPR\" proposal. This included system design, architectural design, detailed design, use case diagrams, activity diagrams, and entity relationship diagrams, with a focus on improving the efficiency and accountability of the DPR website using the RUU dataset."
+      ],
   },
 ];
 
