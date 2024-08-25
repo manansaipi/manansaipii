@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/manansaipii/static/css/main.5c70d517.css",
-    "main.js": "/manansaipii/static/js/main.d10c215f.js",
+    "main.css": "/manansaipii/static/css/main.a3b61152.css",
+    "main.js": "/manansaipii/static/js/main.29b0d90d.js",
+    "static/media/dpr.png": "/manansaipii/static/media/dpr.624bb682d2acf9f922be.png",
     "static/media/carrent.png": "/manansaipii/static/media/carrent.6b1e855ede285c40b77f.png",
     "static/media/coursera1.png": "/manansaipii/static/media/coursera1.ca7649b4a1bb5703654e.png",
     "static/media/boben.png": "/manansaipii/static/media/boben.615c0b5445c0227394f7.png",
@@ -15,6 +16,7 @@
     "static/media/gcsb.png": "/manansaipii/static/media/gcsb.85cb867ad1da91346f10.png",
     "static/media/admin-dashboard.png": "/manansaipii/static/media/admin-dashboard.6a01b466eb1f3a75d0c4.png",
     "static/media/starbucks.png": "/manansaipii/static/media/starbucks.68899a66212007646e61.png",
+    "static/media/mattel.png": "/manansaipii/static/media/mattel.a6944a8507010ff7a1b7.png",
     "static/media/flutter.png": "/manansaipii/static/media/flutter.37d5ebb18b1ecf6877c0.png",
     "static/media/tesla.png": "/manansaipii/static/media/tesla.c04c7ebdc75c49f6b068.png",
     "static/media/backend.png": "/manansaipii/static/media/backend.08c8d93b8142c41a9e63.png",
@@ -25,11 +27,11 @@
     "static/media/menu.svg": "/manansaipii/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
-    "main.5c70d517.css.map": "/manansaipii/static/css/main.5c70d517.css.map",
-    "main.d10c215f.js.map": "/manansaipii/static/js/main.d10c215f.js.map"
+    "main.a3b61152.css.map": "/manansaipii/static/css/main.a3b61152.css.map",
+    "main.29b0d90d.js.map": "/manansaipii/static/js/main.29b0d90d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c70d517.css",
-    "static/js/main.d10c215f.js"
+    "static/css/main.a3b61152.css",
+    "static/js/main.29b0d90d.js"
   ]
 }
