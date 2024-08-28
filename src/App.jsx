@@ -9,7 +9,7 @@ import Tech from './components/tech/Tech'
 // import Testimoni from './components/testimoni/testimoni'
 // import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
-import PreLoader from './components/PreLoader'
+import PreLoader from './components/preloader/PreLoader'
 
 
 
@@ -86,7 +86,7 @@ const App = () => {
       <PoppinsStylesheet />
       <AbrilFatfaceStylesheet />
       <LatoStylesheet />
-      {/* <PreLoader/> */}
+      <PreLoader/>
       <Header />
       <About />
       <Experience />
