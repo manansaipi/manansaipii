@@ -73,7 +73,7 @@ const Header = () => {
 
 
       </div>
-      <div className='absolute xs:bottom-10 w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 w-full flex justify-center items-center'>
         <a href="#about">
           <div className='w-[30px] h-[60px] rounded-3xl border-4 custom-border-class flex justify-center items-start p-1'>
             <motion.dev 
@@ -89,7 +89,7 @@ const Header = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
       </div>
     </header>
   )

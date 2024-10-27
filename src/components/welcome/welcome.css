@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .image{
+        -webkit-mask-image: url(../../assets/o.png);
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: 800px 800px; /* Adjust these values as needed */
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-stroke{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .perspective{
+        perspective: 2200px;
+    }
+}

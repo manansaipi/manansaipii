@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 nav {
   background: transparent;
   width: 100%;
@@ -12,29 +14,32 @@ nav {
 }
 
 nav.scrolled {
-  background-color: rgba(192, 192, 192, 0.8); /* Use rgba to set a transparent grey color */
+  background-color: rgba(2, 1, 1, 0.8); /* Use rgba to set a transparent grey color */
 }
 
 
 
 nav a {
-  background: transparent;
+  text-decoration: none; /* Removes the underline from links */
+  font-family: 'Roboto', sans-serif;
+
+  background: transparent; 
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
-  opacity: 0; /* Add opacity property to hide the text initially */
+  opacity: 1; /* Add opacity property to hide the text initially */
   transition: opacity 0.3s; /* Add a transition for smooth opacity change */
-}
+} 
 
 nav.scrolled a {
   opacity: 1; /* Make the text appear when the navbar is scrolled */
 }
 
-nav a:hover {
+/* nav a:hover {
   background: rgba(0, 0, 0, 0.3);
-}
+} */
 
 nav a.active {
   background: var(--color-bg);

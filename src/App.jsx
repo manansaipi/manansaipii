@@ -1,6 +1,7 @@
 import React from 'react';
+import Welcome from './components/welcome/welcome'
 import Header from './components/header/header'
-// import Nav from './components/nav/nav'
+import Nav from './components/nav/nav'
 import About from './components/about/about'
 import Experience from './components/experience/experience'
 import Certificate from './components/certificate/certificate'
@@ -86,7 +87,8 @@ const App = () => {
       <PoppinsStylesheet />
       <AbrilFatfaceStylesheet />
       <LatoStylesheet />
-      <PreLoader/>
+      {/* <PreLoader/> */}
+      <Welcome />
       <Header />
       <About />
       <Experience />
@@ -94,6 +96,7 @@ const App = () => {
       <Portofolio /> 
       <Tech />
       <Footer />
+      {/* <Nav /> */}
 
     </>
   )
