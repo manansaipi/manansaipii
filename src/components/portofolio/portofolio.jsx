@@ -1,44 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './portofolio.css'
-import IMG1 from '../../assets/all-ticket.png'
-import IMG2 from '../../assets/admin-dashboard.png'
+
 import { motion } from 'framer-motion'
 import { SectionWrapper } from '../../hoc'
 import { textVariant } from '../../utils/motion'
 import { fadeIn } from '../../utils/motion'
 import {Tilt} from 'react-tilt'
+import { Link } from 'react-router-dom';
+import projects from '../../components/portofolio/projetcs';
 
 
-const projects = [
-  {
-    title: "Ticketing Web Application",
-    github: "https://github.com/manansaipi/FinalPDT",
-    readme: "https://github.com/manansaipi/FinalPDT#ticketing-web-application",
-    demo: "https://www.youtube.com/watch?v=X61UqD_2ywQ&ab_channel=AbdulMannanSaipi",
-    img: IMG1
-  },
-  {
-    title: "To-do list Mobile Application",
-    github: "https://github.com/manansaipi/final_wpm",
-    readme: "https://github.com/manansaipi/final_wpm#to-do-list-mobile-application",
-    demo: "https://drive.google.com/file/d/1s6V5Nzl7FXEbAWJ9MVQ39xdk62G8iuud/view",
-    img: "https://img.youtube.com/vi/hubttbMuBt0/0.jpg"
-  },
-  {
-    title: "Ticketing Web Application (Laravel)",
-    github: "https://github.com/manansaipi/finalssip",
-    readme: "https://github.com/manansaipi/finalssip#ticketing-web-application",
-    demo: "https://drive.google.com/file/d/11ZjAQnNHXwOAOayjev5PypllmgN1MXXl/view?usp=sharing",
-    img: IMG2
-  },
-  {
-    title: "Serfee - API",
-    github: "https://github.com/manansaipi/Serfee-API",
-    readme: "https://github.com/manansaipi/Serfee-API#serfee-api",
-    demo: "https://drive.google.com/file/d/1BZohtD-g2eFuzjwvxezZKuioRYNhkCmc/view?resourcekey",
-    img: "https://avatars.githubusercontent.com/u/135983300?s=200&v=4"
-  }
-]
+
 const Portofolio = () => {
 const [isMobile, setIsMobile] = useState(false);
 
@@ -104,6 +76,7 @@ const [isMobile, setIsMobile] = useState(false);
                 <div className="portofolio__item-cta">
                   <a href={project.github} className='btn' target="_blank" rel="noreferrer">Github</a>
                   <a href={project.demo} className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
+                  <Link to={`/project/${project.ID}`} className='btn btn-primary'>Preview</Link>
                 </div>
               </article>
             </Tilt>

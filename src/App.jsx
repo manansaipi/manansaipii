@@ -11,14 +11,43 @@ import Tech from './components/tech/Tech'
 // import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
 import PreLoader from './components/preloader/PreLoader'
-
-
-
+import ProjectDetail from './components/ProjectDetail/ProjectDetail';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
 // Add the Font Awesome icons to the library
 library.add(fas);
+
+
+const App = () => {
+  return (
+    <>
+      {/* Your stylesheets */}
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Welcome />
+                <Header />
+                <About />
+                <Experience />
+                <Certificate />
+                <Portofolio />
+                <Tech />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+      </Router>
+    </>
+  );
+};
+
 
 const FontAwesomeStylesheet = () => (
   <link
@@ -77,29 +106,5 @@ const LatoStylesheet = () => (
   </>
 );
 
-
-const App = () => {
-  return (
-    <>
-     <FontAwesomeStylesheet />
-      <BootstrapStylesheet />
-      <FontawesomeStylesheet />
-      <PoppinsStylesheet />
-      <AbrilFatfaceStylesheet />
-      <LatoStylesheet />
-      {/* <PreLoader/> */}
-      <Welcome />
-      <Header />
-      <About />
-      <Experience />
-      <Certificate />
-      <Portofolio /> 
-      <Tech />
-      <Footer />
-      {/* <Nav /> */}
-
-    </>
-  )
-}
 
 export default App

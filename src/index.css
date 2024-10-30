@@ -61,7 +61,7 @@ body {
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
-    margin-bottom: -210px;
+    /* margin-bottom: -210px; */
 }
 
 h1,
@@ -273,17 +273,6 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-/* canvas- styles */
-.canvas-loader {
-  font-size: 10px;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  position: relative;
-  text-indent: -9999em;
-  animation: mulShdSpin 1.1s infinite ease;
-  transform: translateZ(0);
-}
 
 @keyframes mulShdSpin {
   0%,
