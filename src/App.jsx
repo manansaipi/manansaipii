@@ -1,22 +1,11 @@
 import React from 'react';
-import Welcome from './components/welcome/welcome'
-import Header from './components/header/header'
-import Nav from './components/nav/nav'
-import About from './components/about/about'
-import Experience from './components/experience/experience'
-import Certificate from './components/certificate/certificate'
-import Portofolio from './components/portofolio/portofolio'
-import Tech from './components/tech/Tech'
-// import Testimoni from './components/testimoni/testimoni'
-// import Contact from './components/contact/contact'
-import Footer from './components/footer/footer'
-import PreLoader from './components/preloader/PreLoader'
-import ProjectDetail from './components/ProjectDetail/ProjectDetail';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { HashRouter as Router } from 'react-router-dom';
+import AnimatedRoutes from './Route'; // Import the new component
+
 
 // Add the Font Awesome icons to the library
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
 
 
@@ -25,24 +14,7 @@ const App = () => {
     <>
       {/* Your stylesheets */}
       <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Welcome />
-                <Header />
-                <About />
-                <Experience />
-                <Certificate />
-                <Portofolio />
-                <Tech />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="/project/:id" element={<ProjectDetail />} />
-        </Routes>
+        <AnimatedRoutes />
       </Router>
     </>
   );
