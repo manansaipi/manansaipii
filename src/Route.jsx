@@ -4,6 +4,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { TransitionGroup, Transition } from 'react-transition-group';
 import gsap from 'gsap';
 
+import PreLoadr from './components/preloader/PreLoader'
 import Welcome from './components/welcome/welcome'
 import Header from './components/header/header'
 import Nav from './components/nav/nav'
@@ -53,6 +54,7 @@ const AnimatedRoutes = () => {
                 path="/"
                 element={
                   <>
+                    <PreLoader />
                     <Welcome />
                     <Header />
                     <About />
