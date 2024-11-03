@@ -106,7 +106,7 @@ const experiences = [
     iconBg: "#f1f1f1",
     date: "Aug 2023 - Dec 2023",
     points: [
-      "Developed software similar to Tableau, allowing users can create custom dashboards by choosing from a variety of charts. Users have the flexibility to choose and arrange different charts on their dashboard, making the content highly adaptable to their preferences.",
+      "Developed a data visualization application like Tableau/Power BI using Laravel and SQL, enabling users to create custom dashboards with a variety of charts. Users can select and arrange charts according to their preferences, offering a highly adaptable and personalized experience",
       "Designed an efficient data retrieval system (scheduler) using Node.js, which periodically updates a smaller dataset from the main database, ensuring faster query times for the dashboard website.",
       "Played a key role in designing the infrastructure for the \"Improvisasi Dashboard Website Program Legislasi Nasional DPR\" proposal. This included system design, architectural design, detailed design, use case diagrams, activity diagrams, and entity relationship diagrams, with a focus on improving the efficiency and accountability of the DPR website using the RUU dataset."
       ],
@@ -118,9 +118,9 @@ const experiences = [
     iconBg: "#f1f1f1",
     date: "Jan 2024 - Dec 2024",
     points: [
-      "Developed software similar to Tableau, allowing users can create custom dashboards by choosing from a variety of charts. Users have the flexibility to choose and arrange different charts on their dashboard, making the content highly adaptable to their preferences.",
-      "Designed an efficient data retrieval system (scheduler) using Node.js, which periodically updates a smaller dataset from the main database, ensuring faster query times for the dashboard website.",
-      "Played a key role in designing the infrastructure for the \"Improvisasi Dashboard Website Program Legislasi Nasional DPR\" proposal. This included system design, architectural design, detailed design, use case diagrams, activity diagrams, and entity relationship diagrams, with a focus on improving the efficiency and accountability of the DPR website using the RUU dataset."
+      "Spearheaded the digital transformation of manual processes, replacing paper-based and Excel-based systems with automated solutions to enhance efficiency and accuracy",    
+      "Designed, built, and deployed over ten bespoke systems tailored to various departmental needs, utilizing ASP.NET, Power Apps, and Power Automate, C#, VB, and SQL Server, which resulted in significant improvements in workflow efficiency and employee productivity.",
+      "Managed and maintained company data through SQL Server for database management and Power BI for data visualization and reporting. Integrated Gateway to streamline data accessibility, enabling informed decision-making and enhancing data security."
       ],
   },
 ];

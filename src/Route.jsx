@@ -54,7 +54,7 @@ const AnimatedRoutes = () => {
                 path="/"
                 element={
                   <>
-                    <PreLoader />
+                    {/* <PreLoader /> */}
                     <Welcome />
                     <Header />
                     <About />

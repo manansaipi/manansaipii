@@ -9,17 +9,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
 
 
-const App = () => {
-  return (
-    <>
-      {/* Your stylesheets */}
-      <Router>
-        <AnimatedRoutes />
-      </Router>
-    </>
-  );
-};
-
 
 const FontAwesomeStylesheet = () => (
   <link
@@ -77,6 +66,25 @@ const LatoStylesheet = () => (
     />
   </>
 );
+
+const App = () => {
+  return (
+    <>
+      <FontAwesomeStylesheet />
+      <BootstrapStylesheet />
+      <FontawesomeStylesheet />
+      <PoppinsStylesheet />
+      <AbrilFatfaceStylesheet />
+      <LatoStylesheet />
+      {/* Your stylesheets */}
+      <Router>
+      
+        <AnimatedRoutes />
+      </Router>
+    </>
+  );
+};
+
 
 
 export default App

@@ -20,7 +20,8 @@ const Header = () => {
         pin: bg1.current,
         pinSpacing: false,
         start: "top top",
-        end: "bottom bottom"
+        end: "bottom bottom",
+        markers: true,
       });
 
       gsap.timeline({
@@ -28,7 +29,7 @@ const Header = () => {
           trigger: img_container.current,
           pin: img_container.current,
           scrub: 1,
-          start: "0% 0%"
+          start: "0% 0%",
         }
       })
       .to(video.current, { transform: "translateZ(2200px)" }, 0)

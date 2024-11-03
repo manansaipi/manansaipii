@@ -14,7 +14,7 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import './certificate.css'
 
-import b from '../../assets/certificate/Bangkit.png'
+import b from '../../assets/certificate/bangkit.png'
 import c1 from '../../assets/certificate/coursera1.png'
 import c2 from '../../assets/certificate/coursera1.png'
 import d1 from '../../assets/certificate/dicoding1.png'
