@@ -32,8 +32,11 @@ const ProjectDetail = () => {
         duration: 5,
         scrollTrigger: {
           trigger: textRef.current,
+          pin: true,
+          toggleActions: 'play play play reverse',
+          scrub: 8,
           start: 'bottom 40%', // When the top of the text hits 80% of the viewport height
-          end: 'bottom 20%', // Optional: when the bottom hits 60%
+          end: 'bottom 10%', // Optional: when the bottom hits 60%
           markers: true, // Uncomment for debugging
         },
       })

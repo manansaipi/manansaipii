@@ -37,9 +37,9 @@ const projects = [
     {
     ID: 5,
     title: "AudioVision Mobile: Real-Time Object Detection for the Visually Impaired",
-    github: "https://github.com/manansaipi/Serfee-API",
-    readme: "https://github.com/manansaipi/Serfee-API#serfee-api",
-    demo: "https://drive.google.com/file/d/1BZohtD-g2eFuzjwvxezZKuioRYNhkCmc/view?resourcekey",
+    github: "https://github.com/FP-CAPSTONE/AudioVision.git",
+    readme: "https://github.com/FP-CAPSTONE/AudioVision?tab=readme-ov-file#audiovision",
+    demo: "https://www.linkedin.com/posts/abdulmannansaipi_capstoneproject-presidentuniversity-innovation-activity-7232926344815206400-565k?utm_source=share&utm_medium=member_desktop",
     img: "https://avatars.githubusercontent.com/u/135983300?s=200&v=4"
     }
   ]
