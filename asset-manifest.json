@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/manansaipii/static/css/main.1a862db5.css",
-    "main.js": "/manansaipii/static/js/main.a2d731fa.js",
+    "main.js": "/manansaipii/static/js/main.bb4760b8.js",
     "static/media/sea.webm": "/manansaipii/static/media/sea.850610ff7a29239c594e.webm",
     "static/media/dpr.png": "/manansaipii/static/media/dpr.624bb682d2acf9f922be.png",
     "static/media/carrent.png": "/manansaipii/static/media/carrent.6b1e855ede285c40b77f.png",
     "static/media/coursera1.png": "/manansaipii/static/media/coursera1.ca7649b4a1bb5703654e.png",
     "static/media/boben.png": "/manansaipii/static/media/boben.615c0b5445c0227394f7.png",
-    "static/media/bangkit.png": "/manansaipii/static/media/bangkit.c0fe0cb8e6c4cbbb6e13.png",
+    "static/media/Bangkit.png": "/manansaipii/static/media/Bangkit.c0fe0cb8e6c4cbbb6e13.png",
     "static/media/dicoding2.png": "/manansaipii/static/media/dicoding2.35f82ade2a2d7ae27973.png",
     "static/media/dicoding4.png": "/manansaipii/static/media/dicoding4.c57da1a5cf80cbcb0ccf.png",
     "static/media/dicoding3.png": "/manansaipii/static/media/dicoding3.b9a4917b62d9c7601e16.png",
@@ -30,10 +30,10 @@
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
     "main.1a862db5.css.map": "/manansaipii/static/css/main.1a862db5.css.map",
-    "main.a2d731fa.js.map": "/manansaipii/static/js/main.a2d731fa.js.map"
+    "main.bb4760b8.js.map": "/manansaipii/static/js/main.bb4760b8.js.map"
   },
   "entrypoints": [
     "static/css/main.1a862db5.css",
-    "static/js/main.a2d731fa.js"
+    "static/js/main.bb4760b8.js"
   ]
 }
