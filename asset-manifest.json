@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/manansaipii/static/css/main.acdc1933.css",
-    "main.js": "/manansaipii/static/js/main.86f1381f.js",
+    "main.css": "/manansaipii/static/css/main.1a862db5.css",
+    "main.js": "/manansaipii/static/js/main.a2d731fa.js",
     "static/media/sea.webm": "/manansaipii/static/media/sea.850610ff7a29239c594e.webm",
     "static/media/dpr.png": "/manansaipii/static/media/dpr.624bb682d2acf9f922be.png",
     "static/media/carrent.png": "/manansaipii/static/media/carrent.6b1e855ede285c40b77f.png",
@@ -29,11 +29,11 @@
     "static/media/menu.svg": "/manansaipii/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
-    "main.acdc1933.css.map": "/manansaipii/static/css/main.acdc1933.css.map",
-    "main.86f1381f.js.map": "/manansaipii/static/js/main.86f1381f.js.map"
+    "main.1a862db5.css.map": "/manansaipii/static/css/main.1a862db5.css.map",
+    "main.a2d731fa.js.map": "/manansaipii/static/js/main.a2d731fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.acdc1933.css",
-    "static/js/main.86f1381f.js"
+    "static/css/main.1a862db5.css",
+    "static/js/main.a2d731fa.js"
   ]
 }
