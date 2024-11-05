@@ -1,13 +1,10 @@
-// ProjectDetail.js
-
 import React, { useEffect, useRef } from 'react';
-
-// import { Link } from 'react-router-dom';
-// import projects from '../../projetcs';
 import './AudioVision.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { faDiceFive } from '@fortawesome/free-solid-svg-icons';
+
+import iphone from '../../../../assets/AudioVision/intro.png'; // Replace with your video path
+import spashscreen from '../../../../assets/AudioVision/splashscreen.png'; // Replace with your video path
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +17,7 @@ const ProjectDetail = () => {
   const contentRef = useRef(null);
   const textRef = useRef(null); // New ref for the text
   const secondRef = useRef(null); // Ref for the second section
+  const img_container = useRef(null); // Ref for the second section
 
   useEffect(() => {
 
@@ -27,7 +25,7 @@ const ProjectDetail = () => {
 
     // GSAP ScrollTrigger for zoom effect
     gsap.to(textRef.current, {
-      scale: 75, // Zoom in (scale 2x, adjust as necessary)
+      scale: 50, // Zoom in (scale 2x, adjust as necessary)
       duration: 3,
       scrollTrigger: {
         trigger: textRef.current,
@@ -71,9 +69,25 @@ const ProjectDetail = () => {
         {/* <Link to="/" className="btn mt-4">Back to Home</Link> */}
       </div>
 
-      <div className='h-screen flex justify-center items-center' ref={secondRef}>
-        <div className="text-[20px] text-black text-center">tes</div>
+             
+      <div className='w-screen h-screen row-auto flex space-x-40 justify-center items-center bg-slate-300' ref={secondRef}>
+          <div className="text-[20px] text-black max-w-5xl px-40 col-auto">
+            <h1 className="text-[75px] font-bold">Introduction</h1>
+            <p className="mt-10"> 
+              AudioVision is an application designed to enhance the lives of visually impaired individuals. This app utilizes advanced computer vision and real-time object detection technology.
+            </p>
+            <p className="mt-2">
+              AudioVision offers reliable, detailed guidance, enabling users to navigate their environment safely and independently.
+            </p>
+          </div>
+          
+          <div ref={img_container} className="img-container relative lg:mt-8 justify-center items-center ">
+            <img src={spashscreen} alt="AudioVision App" className="w-[65%] absolute lg:bottom-[-25%] lg:left-[-35%] z-10"  />
+            <img src={iphone} alt="AudioVision App" className="relative w-[80%] lg:bottom-[-200px] " />
+          </div>
       </div>
+
+
     </div>
   );
 };
