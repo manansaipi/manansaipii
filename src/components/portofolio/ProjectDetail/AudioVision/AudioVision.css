@@ -13,6 +13,7 @@
   .project-detail p {
     max-width: 600px;
     margin: 0 auto;
+    perspective: 2200px;
     /* Additional styling as needed */
   }
   

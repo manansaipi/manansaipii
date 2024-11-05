@@ -12,9 +12,10 @@ import projects from '../../components/portofolio/projetcs';
 
 
 const Portofolio = () => {
-const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 600);
     };
@@ -76,7 +77,7 @@ const [isMobile, setIsMobile] = useState(false);
                 <div className="portofolio__item-cta">
                   <a href={project.github} className='btn' target="_blank" rel="noreferrer">Github</a>
                   <a href={project.demo} className='btn btn-primary' target="_blank" rel="noreferrer">Demo</a>
-                  <Link to={`/project/${project.ID}`} className='btn btn-primary'>Preview</Link>
+                  <Link to={project.link} className='btn btn-primary'>Preview</Link>
                 </div>
               </article>
             </Tilt>

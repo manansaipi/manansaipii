@@ -76,9 +76,7 @@ const App = () => {
       <PoppinsStylesheet />
       <AbrilFatfaceStylesheet />
       <LatoStylesheet />
-      {/* Your stylesheets */}
       <Router>
-      
         <AnimatedRoutes />
       </Router>
     </>
