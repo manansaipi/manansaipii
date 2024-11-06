@@ -4,12 +4,12 @@ import React, { useEffect, useRef } from "react";
 // import projects from '../../projetcs';
 import "./AudioVision.css";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
 import introScreen from "../../../../assets/AudioVision/intro.png"; // Replace with your video path
 import spashscreen from "../../../../assets/AudioVision/splashscreen.png"; // Replace with your video path
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const ProjectDetail = () => {
 	window.scrollTo({
@@ -18,9 +18,11 @@ const ProjectDetail = () => {
 	});
 
 	const contentRef = useRef(null);
-	const textRef = useRef(null); // New ref for the text
-	const secondRef = useRef(null); // Ref for the second section
-	const img_container = useRef(null); // Ref for the second section
+	const textRef = useRef(null); 
+	const secondRef = useRef(null); 
+	const img_container = useRef(null); 
+
+  const headerIntro = useRef(null); 
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -50,11 +52,6 @@ const ProjectDetail = () => {
 			},
 		});
 
-		// ScrollTrigger.create({
-		//   trigger: secondRef.current,
-		//   start: "20% 20%",
-		//   markers: true
-		// })
 	}, []);
 
 	return (
@@ -73,11 +70,11 @@ const ProjectDetail = () => {
 			</div>
 
 			<div
-				className="w-screen h-screen flex justify-center items-center bg-slate-300"
+				className="w-screen h-screen flex justify-center items-center "
 				ref={secondRef}
 			>
-				<div className="text-2xl  text-black max-w-[50%] mx-28 bg-slate-200 ">
-					<h1 className="text-7xl font-bold">Introduction</h1>
+				<div className="text-2xl  text-black max-w-[50%] mx-28  ">
+					<h1 className="text-7xl font-bold" ref={headerIntro}>Introduction</h1>
 					<p className="mt-10">
 						AudioVision is an application designed to enhance the
 						lives of visually impaired individuals. This app
@@ -93,42 +90,27 @@ const ProjectDetail = () => {
 
 				<div
 					ref={img_container}
-					className=" h-screen max-w-[50%] flex justify-center items-end bg-pink-300"
+					className=" h-screen max-w-[50%] flex justify-center items-end "
 				>
-					<div className="bg-red-300  mt-24 ml-36 mr-24 relative bottom-[-15%] right-[-10%] ">
+					<div className="  mt-24 ml-36 mr-24 relative bottom-[-15%] right-[-10%] ">
 						<div>
 							<img
 								src={spashscreen}
 								alt="AudioVision App"
-								className="w-[70%]  absolute bottom-0 left-[-52%] z-10"
+								className="w-[60%]  absolute bottom-0 left-[-45%] z-10"
 							/>
 						</div>
 						<div>
 							<img
 								src={introScreen}
 								alt="AudioVision App"
-								className="w-[90%]   relative "
+								className="w-[80%]   relative "
 							/>
 						</div>
 					</div>
 				</div>
-
-				{/* <div
-					ref={img_container}
-					className=" h-screen  relative max-w-[50%]  bg-pink-300"
-				>
-					<img
-						src={spashscreen}
-						alt="AudioVision App"
-						className="w-[45%] absolute  bottom-[-20%] left-[-20%] z-10"
-					/>
-					<img
-						src={introScreen}
-						alt="AudioVision App"
-						className="w-[65%] relative bottom-[-30%]"
-					/>
-				</div> */}
 			</div>
+      <div className="h-screen"></div>
 		</div>
 	);
 };
