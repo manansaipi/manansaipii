@@ -8,6 +8,7 @@ import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
 import introScreen from "../../../../assets/AudioVision/intro.png"; // Replace with your video path
 import spashscreen from "../../../../assets/AudioVision/splashscreen.png"; // Replace with your video path
+import { FaTools } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -18,11 +19,16 @@ const ProjectDetail = () => {
 	});
 
 	const contentRef = useRef(null);
-	const textRef = useRef(null); 
-	const secondRef = useRef(null); 
-	const img_container = useRef(null); 
+	const textRef = useRef(null);
+	const secondRef = useRef(null);
+	const img_container = useRef(null);
 
-  const headerIntro = useRef(null); 
+	const headerIntro = useRef(null);
+
+	// New refs for the UNDER DEVELOPMENT section
+	const underDevRef = useRef(null);
+	const iconRef = useRef(null);
+	const textDevRef = useRef(null);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -52,6 +58,29 @@ const ProjectDetail = () => {
 			},
 		});
 
+		// New GSAP animations for UNDER DEVELOPMENT section
+		const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: underDevRef.current,
+				start: "top 80%",
+			},
+		});
+
+		tl.from(iconRef.current, {
+			y: -50,
+			opacity: 0,
+			duration: 1,
+			ease: "power2.out",
+		}).from(
+			textDevRef.current,
+			{
+				y: 50,
+				opacity: 0,
+				duration: 1,
+				ease: "power2.out",
+			},
+			"-=0.5" // Overlap the animations by 0.5 seconds
+		);
 	}, []);
 
 	return (
@@ -61,9 +90,10 @@ const ProjectDetail = () => {
 				ref={contentRef}
 			>
 				<p className="text-[20px] text-black text-center" ref={textRef}>
-					{/* <b>Dedicated</b> to all impaired people who demonstrate incredible resilience and determination. */}
-					<b>Dedicated</b> Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Optio, consequatur?
+					<b>Dedicated</b> to all impaired people who demonstrate
+					incredible resilience and determination.
+					{/* <b>Dedicated</b> Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Optio, consequatur? */}
 				</p>
 
 				{/* <Link to="/" className="btn mt-4">Back to Home</Link> */}
@@ -74,7 +104,9 @@ const ProjectDetail = () => {
 				ref={secondRef}
 			>
 				<div className="text-2xl  text-black max-w-[50%] mx-28  ">
-					<h1 className="text-7xl font-bold" ref={headerIntro}>Introduction</h1>
+					<h1 className="text-7xl font-bold" ref={headerIntro}>
+						Introduction
+					</h1>
 					<p className="mt-10">
 						AudioVision is an application designed to enhance the
 						lives of visually impaired individuals. This app
@@ -110,7 +142,21 @@ const ProjectDetail = () => {
 					</div>
 				</div>
 			</div>
-      <div className="h-screen"></div>
+			<div
+				className="flex flex-col justify-center items-center h-screen bg-gray-100"
+				ref={underDevRef}
+			>
+				<FaTools
+					className="text-6xl text-gray-800 mb-4"
+					ref={iconRef}
+				/>
+				<h1
+					className="text-5xl font-bold text-gray-800"
+					ref={textDevRef}
+				>
+					UNDER DEVELOPMENT
+				</h1>
+			</div>
 		</div>
 	);
 };
