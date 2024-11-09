@@ -47,7 +47,7 @@ import IMG2 from '../../assets/admin-dashboard.png'
     title: "AudioVision Mobile: Real-Time Object Detection for the Visually Impaired",
     github: "https://github.com/FP-CAPSTONE/AudioVision.git",
     readme: "https://github.com/FP-CAPSTONE/AudioVision?tab=readme-ov-file#audiovision",
-    demo: "https://www.linkedin.com/posts/abdulmannansaipi_capstoneproject-presidentuniversity-innovation-activity-7232926344815206400-565k?utm_source=share&utm_medium=member_desktop",
+    demo: "https://youtu.be/WO8DyqMLm74?feature=shared",
     img: "https://avatars.githubusercontent.com/u/135983300?s=200&v=4",
     link: "/project/AudioVision",
     previewAvailable: true, // Set to true
