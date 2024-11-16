@@ -113,7 +113,7 @@ const experiences = [
   },
   {
     title: "PT. Mattel Indonesia",
-    company_name: "IT Develooper Intern",
+    company_name: "Full Stack Develooper Intern",
     icon: mattel,
     iconBg: "#f1f1f1",
     date: "Jan 2024 - Dec 2024",
