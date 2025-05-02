@@ -80,7 +80,7 @@ const Experience = () => {
       <motion.div variants={textVariant()}>
         <section id="Experience">
           <h5>What I Have Done So Far</h5>
-          <h2>Experiecne</h2>
+          <h2>Experience</h2>
         </section>
       </motion.div>
       <div className="container">
