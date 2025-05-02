@@ -1,11 +1,11 @@
-import React, { useEffect }  from 'react'
-import './header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { motion } from 'framer-motion'
+import React, { useEffect } from "react";
+import "./header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 const Header = () => {
- useEffect(() => {
+  useEffect(() => {
     const typedTextSpan = document.querySelector(".typed-text");
     const cursorSpan = document.querySelector(".cursor");
 
@@ -20,7 +20,8 @@ const Header = () => {
       if (charIndex < textArray[textArrayIndex].length) {
         if (!cursorSpan.classList.contains("typing"))
           cursorSpan.classList.add("typing");
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        typedTextSpan.textContent +=
+          textArray[textArrayIndex].charAt(charIndex);
         charIndex++;
         setTimeout(type, typingDelay);
       } else {
@@ -33,7 +34,10 @@ const Header = () => {
       if (charIndex > 0) {
         if (!cursorSpan.classList.contains("typing"))
           cursorSpan.classList.add("typing");
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(
+          0,
+          charIndex - 1
+        );
         charIndex--;
         setTimeout(erase, erasingDelay);
       } else {
@@ -50,30 +54,41 @@ const Header = () => {
   }, []);
   return (
     <header>
-    <div className="home">
-      <div className="container header__container" >
-
-        <section id="home" >
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container-fluid text">
-          <h2 className="display-4">about & contact</h2>
-          <h1 className="h1">Hi, I’m <span className="span elvina typed-text"></span><span className="cursor">&nbsp;</span></h1>
-          <h3 className="lead">President University Student</h3>  
-              <div className="sosial-media">
-                   <a href="https://www.linkedin.com/in/abdulmannansaipi/" target="blank"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-                  <a href="https://github.com/manansaipi" target="blank"><i className="fab fa-github fa-2x"></i></a>
-               
-                  <a href="https://www.instagram.com/manansaipi/" target="blank"><i className="fab fa-instagram fa-2x"></i>
+      <div className="home">
+        <div className="container header__container">
+          <section id="home">
+            <div className="jumbotron jumbotron-fluid">
+              <div className="container-fluid text">
+                <h2 className="display-4">about & contact</h2>
+                <h1 className="h1">
+                  Hi, I’m <span className="span elvina typed-text"></span>
+                  <span className="cursor">&nbsp;</span>
+                </h1>
+                <h3 className="lead">Software Engineer</h3>
+                <div className="sosial-media">
+                  <a
+                    href="https://www.linkedin.com/in/abdulmannansaipi/"
+                    target="blank"
+                  >
+                    {" "}
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
                   </a>
-            
+                  <a href="https://github.com/manansaipi" target="blank">
+                    <i className="fab fa-github fa-2x"></i>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/manansaipi/"
+                    target="blank"
+                  >
+                    <i className="fab fa-instagram fa-2x"></i>
+                  </a>
+                </div>
               </div>
+            </div>
+          </section>
         </div>
-      </div>
-    </section>
-
-
-      </div>
-      {/* <div className='absolute xs:bottom-10 w-full flex justify-center items-center'>
+        {/* <div className='absolute xs:bottom-10 w-full flex justify-center items-center'>
         <a href="#about">
           <div className='w-[30px] h-[60px] rounded-3xl border-4 custom-border-class flex justify-center items-start p-1'>
             <motion.dev 
@@ -92,7 +107,7 @@ const Header = () => {
       </div> */}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

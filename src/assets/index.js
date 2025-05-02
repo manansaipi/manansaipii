@@ -27,9 +27,9 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import dpr from "./company/dpr.png";
 import mattel from "./company/mattel.png";
+import lgsinarmas from "./company/lgsinarmas.png";
 
 import carrent from "./carrent.png";
-
 
 export {
   backend,
@@ -59,5 +59,6 @@ export {
   flutter,
   gcp,
   dpr,
-  mattel
+  mattel,
+  lgsinarmas,
 };

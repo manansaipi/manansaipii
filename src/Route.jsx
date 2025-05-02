@@ -21,63 +21,63 @@ import SerfeeDetail from "./components/portofolio/ProjectDetail/Serfee/Serfee";
 // import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const AnimatedRoutes = () => {
-	const location = useLocation();
+    const location = useLocation();
 
-	return (
-		<TransitionGroup component={null}>
-			<Transition
-				key={location.pathname}
-				timeout={500}
-				onEnter={(node) => {
-					gsap.from(node, {
-						opacity: 0,
-						duration: 0.5,
-						y: 50,
-						ease: "power1.out",
-					});
-				}}
-				onExit={(node) => {
-					gsap.to(node, {
-						opacity: 0,
-						duration: 0.5,
-						y: -50,
-						ease: "power1.in",
-					});
-				}}
-			>
-				{(state) => (
-					<div className="page">
-						<Routes location={location}>
-							<Route
-								path="/"
-								element={
-									<>
-										{/* <PreLoader /> */}
-										<Welcome />
-										<Header />
-										<About />
-										<Experience />
-										<Certificate />
-										<Portofolio />
-										<Tech />
-										<Footer />
-									</>
-								}
-							/>
-							<Route
-								path="/project/Serfee"
-								element={<SerfeeDetail />}
-							/>
-							<Route
-								path="/project/AudioVision"
-								element={<AudioVisionDetail />}
-							/>
-						</Routes>
-					</div>
-				)}
-			</Transition>
-		</TransitionGroup>
-	);
+    return (
+        <TransitionGroup component={null}>
+            <Transition
+                key={location.pathname}
+                timeout={500}
+                onEnter={(node) => {
+                    gsap.from(node, {
+                        opacity: 0,
+                        duration: 0.5,
+                        y: 50,
+                        ease: "power1.out",
+                    });
+                }}
+                onExit={(node) => {
+                    gsap.to(node, {
+                        opacity: 0,
+                        duration: 0.5,
+                        y: -50,
+                        ease: "power1.in",
+                    });
+                }}
+            >
+                {(state) => (
+                    <div className="page">
+                        <Routes location={location}>
+                            <Route
+                                path="/"
+                                element={
+                                    <>
+                                        {/* <PreLoader /> */}
+                                        {/* <Welcome /> */}
+                                        <Header />
+                                        <About />
+                                        <Experience />
+                                        <Certificate />
+                                        {/* <Portofolio /> */}
+                                        <Tech />
+                                        <Footer />
+                                    </>
+                                }
+                            />
+                            <Route
+                                path="/project/Serfee"
+                                element={<SerfeeDetail />}
+                            />
+                            <Route
+                                path="/project/AudioVision"
+                                element={<AudioVisionDetail />}
+                            />
+                        </Routes>
+                    </div>
+                )}
+            </Transition>
+        </TransitionGroup>
+    );
 };
 
 export default AnimatedRoutes;

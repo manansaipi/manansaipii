@@ -16,91 +16,101 @@ import { useLayoutEffect, useRef, useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const cards = [
-	{
-		icon: <FaAward className="about__icon" />,
-		title: "Experience",
-		content: "1+ Years",
-	},
-	{
-		icon: <VscFolderLibrary className="about__icon" />,
-		title: "Project",
-		content: "20+",
-	},
-	{
-		icon: <AiFillStar className="about__icon" />,
-		title: "Rank",
-		content: "Mytical Immortal",
-	},
+    {
+        icon: <FaAward className="about__icon" />,
+        title: "Experience",
+        content: "1+ Years",
+    },
+    {
+        icon: <VscFolderLibrary className="about__icon" />,
+        title: "Project",
+        content: "20+",
+    },
+    {
+        icon: <AiFillStar className="about__icon" />,
+        title: "Rank",
+        content: "Mytical Immortal",
+    },
 ];
 
 const About = () => {
-	const titleSection = useRef(null);
+    const titleSection = useRef(null);
 
-	useEffect(() => {
-		// ScrollTrigger.create({
-		// 	trigger: titleSection.current,
-		// 	pin: true,
-		// 	start: "bottom top",
-		// 	end: "+=500 +=500",
-		// 	markers: true,
-		// 	onEnter: () => {
-		// 		console.log("kont");
-		// 	},
-		// });
-	}, []);
+    useEffect(() => {
+        // ScrollTrigger.create({
+        // 	trigger: titleSection.current,
+        // 	pin: true,
+        // 	start: "bottom top",
+        // 	end: "+=500 +=500",
+        // 	markers: true,
+        // 	onEnter: () => {
+        // 		console.log("kont");
+        // 	},
+        // });
+    }, []);
 
-	return (
-		<>
-			<div className="about">
-				<motion.div variants={textVariant()}>
-					<section ref={titleSection} id="about">
-						<h5>Get To Know</h5>
-						<h2>Me</h2>
-					</section>
-				</motion.div>
-				<div className="container about__container">
-					<motion.div variants={fadeIn("right", "", 0.5, 0.75)}>
-						<div className="about__me">
-							<div className="about__me-image">
-								<img src={ME} alt="me" />
-							</div>
-						</div>
-					</motion.div>
+    return (
+        <>
+            <div className="about">
+                <motion.div variants={textVariant()}>
+                    <section ref={titleSection} id="about">
+                        <h5>Get To Know</h5>
+                        <h2>Me</h2>
+                    </section>
+                </motion.div>
+                <div className="container about__container">
+                    <motion.div variants={fadeIn("right", "", 0.5, 0.75)}>
+                        <div className="about__me">
+                            <div className="about__me-image">
+                                <img src={ME} alt="me" />
+                            </div>
+                        </div>
+                    </motion.div>
 
-					<div className="about__content">
-						<div className="about__cards">
-							{cards.map((card, index) => (
-								<motion.div
-									variants={fadeIn(
-										"left",
-										"",
-										index * 0.5,
-										0.75
-									)}
-								>
-									<Tilt
-										options={{
-											max: 50,
-											scale: 1.15,
-											speed: 450,
-										}}
-									>
-										<article
-											className="about__card"
-											key={index}
-										>
-											<div className="about__icon flex justify-center items-center mb-1">
-												{card.icon}
-											</div>
-											<h5>{card.title}</h5>
-											<small>{card.content}</small>
-										</article>
-									</Tilt>
-								</motion.div>
-							))}
-						</div>
-						<motion.div variants={fadeIn("up", "", 1, 0.75)}>
-							<p>
+                    <div className="about__content">
+                        <div className="about__cards">
+                            {cards.map((card, index) => (
+                                <motion.div
+                                    variants={fadeIn(
+                                        "left",
+                                        "",
+                                        index * 0.5,
+                                        0.75
+                                    )}
+                                >
+                                    <Tilt
+                                        options={{
+                                            max: 50,
+                                            scale: 1.15,
+                                            speed: 450,
+                                        }}
+                                    >
+                                        <article
+                                            className="about__card"
+                                            key={index}
+                                        >
+                                            <div className="about__icon flex justify-center items-center mb-1">
+                                                {card.icon}
+                                            </div>
+                                            <h5>{card.title}</h5>
+                                            <small>{card.content}</small>
+                                        </article>
+                                    </Tilt>
+                                </motion.div>
+                            ))}
+                        </div>
+                        <motion.div variants={fadeIn("up", "", 1, 0.75)}>
+                            <p>
+                                My name is Abdul Mannan Saipi. I am Software
+                                Engineer with experience in web, mobile, and
+                                machine learning application development.
+                                Proficient in full-stack development, with
+                                expertise in designing, building, and deploying
+                                scalable applications on cloud platforms.
+                                Curently I am working on LG Sinar Mas Technology
+                                Solution as Software Engineer
+                            </p>
+                            {/* <p>
 								My name is Abdul Mannan Saipi. I am a student at
 								President University pursuing Bachelor's Degree
 								in Information Technology. I am deeply
@@ -118,13 +128,13 @@ const About = () => {
 								am excited to apply my knowledge and abilities
 								to realworld problems and make a positive impact
 								in the field of technology.
-							</p>
-						</motion.div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+							</p> */}
+                        </motion.div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default SectionWrapper(About, "about");
