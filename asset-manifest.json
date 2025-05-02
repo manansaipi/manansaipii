@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/manansaipii/static/css/main.2f3200d8.css",
-    "main.js": "/manansaipii/static/js/main.26653e38.js",
+    "main.css": "/manansaipii/static/css/main.cc22aa44.css",
+    "main.js": "/manansaipii/static/js/main.9c878f5d.js",
     "static/media/sea.webm": "/manansaipii/static/media/sea.850610ff7a29239c594e.webm",
     "static/media/intro.png": "/manansaipii/static/media/intro.e8e354725a8524370915.png",
     "static/media/dpr.png": "/manansaipii/static/media/dpr.624bb682d2acf9f922be.png",
@@ -18,6 +18,7 @@
     "static/media/all-ticket.png": "/manansaipii/static/media/all-ticket.0018c8a6bfb283289197.png",
     "static/media/gcsb.png": "/manansaipii/static/media/gcsb.85cb867ad1da91346f10.png",
     "static/media/admin-dashboard.png": "/manansaipii/static/media/admin-dashboard.6a01b466eb1f3a75d0c4.png",
+    "static/media/lgsinarmas.png": "/manansaipii/static/media/lgsinarmas.e73a692818d79bd6a395.png",
     "static/media/starbucks.png": "/manansaipii/static/media/starbucks.68899a66212007646e61.png",
     "static/media/o.png": "/manansaipii/static/media/o.59bae980e66b93cad18f.png",
     "static/media/mattel.png": "/manansaipii/static/media/mattel.a6944a8507010ff7a1b7.png",
@@ -31,11 +32,11 @@
     "static/media/menu.svg": "/manansaipii/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "static/media/threejs.svg": "/manansaipii/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/manansaipii/index.html",
-    "main.2f3200d8.css.map": "/manansaipii/static/css/main.2f3200d8.css.map",
-    "main.26653e38.js.map": "/manansaipii/static/js/main.26653e38.js.map"
+    "main.cc22aa44.css.map": "/manansaipii/static/css/main.cc22aa44.css.map",
+    "main.9c878f5d.js.map": "/manansaipii/static/js/main.9c878f5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f3200d8.css",
-    "static/js/main.26653e38.js"
+    "static/css/main.cc22aa44.css",
+    "static/js/main.9c878f5d.js"
   ]
 }
